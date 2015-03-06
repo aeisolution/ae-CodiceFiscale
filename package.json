@@ -1,0 +1,35 @@
+{
+  "name": "ae-CodiceFiscale",
+  "version": "1.0.0",
+  "description": "node module to check Italian Tax Code",
+  "main": "./src/lib/ae-CodiceFiscale",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aeisolution/ae-CodiceFiscale"
+  },
+  "keywords": [
+    "Tax",
+    "Code",
+    "Codice",
+    "Fiscale",
+    "Italian",
+    "Revenue",
+    "Agency",
+    "Tax",
+    "Code",
+    "nodejs"
+  ],
+  "author": "aeisolution <info@aeisolution.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aeisolution/ae-CodiceFiscale/issues"
+  },
+  "homepage": "https://github.com/aeisolution/ae-CodiceFiscale",
+  "dependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
