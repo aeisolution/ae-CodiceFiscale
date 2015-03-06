@@ -1,5 +1,5 @@
 {
-  "name": "ae-CodiceFiscale",
+  "name": "ae-codicefiscale",
   "version": "1.0.0",
   "description": "node module to check Italian Tax Code",
   "main": "./src/lib/ae-CodiceFiscale",

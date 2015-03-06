@@ -200,17 +200,4 @@ var check = function(code) {
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 exports.check = check;

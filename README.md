@@ -1,9 +1,9 @@
-# ae-CodiceFiscale
+ae-CodiceFiscale
 ============================================================
 
-## Software to check the Italian.
-
+Software to check the Italian Tax Code.
 ------------------------------------------------------------
+
 In Italy, the tax code identifies a citizen in all dealings, not only of fiscal nature, with the Italian public authorities and other administrations.
 The tax code is issued by the Italian Revenue Agency (Agenzia delle Entrate)
 
