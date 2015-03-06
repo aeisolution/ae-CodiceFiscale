@@ -113,12 +113,14 @@ var getNumeroControllo = function(char, pos) {
     else            arr = arrCaratterePari;
   }
 
-  var result = arr.indexOf(char);
+  var result = null;
+  result = arr.indexOf(char);
   if(result===-1) {
     console.log('ERROR: %s not found in array', char);
+    return null;
   }
 
-  return result !== -1 ? result : null;
+  return result;
 };
 
 /* Array Check-digit
@@ -175,16 +177,15 @@ var check = function(code) {
     return console.log('Error: wrong code for length');
  
   var taxCode = code.toUpperCase();
-  console.log('taxCode: ' + taxCode);
-  
+    
 
   //Local variables
   var intAppoggio = 0;
   var cdg;
   
   for(var i = 0; i<15; i++) {
-    intAppoggio += getNumeroControllo(code.charAt(i), i+1);
-    console.log('%d - %s (%d)', i, code.charAt(i), intAppoggio);
+    intAppoggio += getNumeroControllo(taxCode.charAt(i), i+1);
+    console.log('%d - %s (%d)', i, taxCode.charAt(i), intAppoggio);
   }
   
   var resto = (intAppoggio % 26);
@@ -194,9 +195,9 @@ var check = function(code) {
   console.log('intAppoggio: %d -> check-digit: %s', intAppoggio, ckdigit);
   
   if(ckdigit === code.charAt(15))
-    console.log('CODICE FISCALE %s valido!', code);
+    console.log('CODICE FISCALE %s valido!', taxCode);
   else
-    console.log('CODICE FISCALE %s NON valido!', code);
+    console.log('CODICE FISCALE %s NON valido!', taxCode);
   
 }
 
